@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy Edward Kozdon</title>
+<style>
+[class="col-1"] {
+  float: left;
+  padding: 15px;
+}
+[class="col-2"] {
+  float: right;
+  padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+  .col-1 {width: 100%; text-align: center;}
+  .col-2 {width: 100%; text-align: center;}
+}
+</style>
   </head>
   <body>
     <header>
@@ -16,7 +34,10 @@
 
     <main>
       <p>
-      <img src=JeremyEdwardKozdon.png img hspace="10" align="right" alt="Jeremy Edward Kozdon">
+      <div class="col-2">
+      <img src=JeremyEdwardKozdon.png alt="Jeremy Edward Kozdon">
+      </div>
+      <div class="col-1">
       <a
           href="https://www.google.com/maps/place/Spanagel+Hall/@36.5946547,-121.877395,17z/data=!3m1!4b1!4m5!3m4!1s0x808de44966a3b3d5:0x82966152430c7b1c!8m2!3d36.5946504!4d-121.8752063">
         Spanagel Hall, Room 268</a><br>
@@ -34,7 +55,10 @@
       <a href="https://scholar.google.com/citations?user=PKIT5K4AAAAJ">Google Scholar</a>
       |
       <a href="https://github.com/jkozdon">github</a>
+      </div>
       </p>
+    </main>
+    <main>
 
       <h2>publications</h2>
 
