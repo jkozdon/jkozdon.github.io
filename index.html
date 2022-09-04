@@ -51,12 +51,108 @@
 
       <h3 id="preprints">preprints (aka submitted)</h3>
 
+      <b>Incorporating full elastodynamics effects and dipping fault geometries
+        in community code verification exercises for simulations of earthquake
+        sequences and aseismic slip (SEAS),</b>.
+      B. A. Erickson, J. Jiang, V. Lambert, M.
+      Abdelmeguid, M. Almquist, J. P. Ampuero, R. Ando, S.
+      Barbot, C. Cattania, A. Chen, L. D. Zilio, E. M. Dunham,
+      A. Elbanna, A.-A. Gabriel, T. Harvey, Y. Huang, Y.
+      Kaneko, J. Kozdon, N. Lapusta, D. Li, M. Li, C. Liang, Y.
+      Liu, S. Ozawa, C. Pranger, P. Segall, Y. Sun, P. Thakur,
+      C. Uphoff, Y. van Dinther, and Y. Yang. 2022.
+      Earth ArXiv:&nbsp;<a href="https://doi.org/10.31223/X5NP87">3288</a>
+      <details>
+        <summary>abstract</summary>
+        <font size="-1">
+          Numerical modeling of earthquake dynamics and derived insight for
+          seismic hazard relies on credible, reproducible model results. The
+          SEAS (Sequences of Earthquakes and Aseismic Slip) initiative has set
+          out to facilitate community code comparisons, and verify and advance
+          the next generation of physics-based earthquake models that reproduce
+          all phases of the seismic cycle. With the goal of advancing SEAS
+          models to robustly incorporate physical and geometrical complexities,
+          here we present code comparison results from two new benchmark
+          problems: BP1-FD considers full elastodynamic effects and BP3-QD
+          considers dipping fault geometries. Eight modeling groups participated
+          in each benchmark, allowing us to explore these physical ingredients
+          across multiple codes and better understand associated numerical
+          considerations. We find that numerical resolution and computational
+          domain size are critical parameters to obtain matching results, with
+          increasing domain-size requirements posing challenges for volume-based
+          codes even in 2D settings. Codes for BP1-FD implemented different
+          criteria for switching between quasi-static and dynamic solvers, which
+          require tuning to obtain matching results. In BP3-QD, proper remote
+          boundaries conditions consistent with specified rigid body translation
+          are required to obtain matching surface displacements. With these
+          numerical and mathematical issues resolved, we obtain good agreement
+          among codes in long-term fault behavior, earthquake recurrence
+          intervals, and rupture features of peak slip rates and stress drops
+          for both benchmarks. Including full inertial effects generates events
+          with larger slip rates and rupture speeds compared to the
+          quasi-dynamic counterpart. For BP3-QD, both dip angle and sense of
+          motion (thrust versus normal faulting) alter ground motion on the
+          hanging and foot walls, and influence event patterns, with some
+          sequences exhibiting similar-sized characteristic earthquakes, and
+          others exhibiting several earthquakes of differing magnitudes. These
+          findings underscore the importance of considering full dynamics and
+          non-vertical dip angles in SEAS models, as both influence short and
+          long-term earthquake behavior, and associated hazards.
+        </font>
+      </details>
+
+      <b>A high-order accurate summation-by-parts finite difference method for
+        fully-dynamic earthquake sequence simulations within sedimentary basins,</b>.
+      T. W. Harvey, B. A. Erickson, and J. E. Kozdon. 2022.
+      Earth ArXiv:&nbsp;<a href="https://doi.org/10.31223/X58K95">3505</a>
+      <details>
+        <summary>abstract</summary>
+        <font size="-1">
+          We present a computationally efficient numerical method for earthquake
+          sequences that incorporates wave propagation during rupture. A
+          vertical strike-slip fault governed by rate-and-state friction is
+          embedded in a heterogeneous elastic half-space discretized using a
+          high-order accurate Summation-by-Parts finite difference method. We
+          develop a two solver approach: Adaptive time-stepping is applied
+          during the interseismic periods and during coseismic rupture we apply
+          a non-stiff method, which enables a variety of explicit time stepping
+          methods. We consider a shallow sedimentary basin and explore model
+          sensitivity to spatial resolution and the switching criteria used to
+          transition between solvers. For sufficient grid resolution and
+          switching thresholds, simulations results remain robust over long time
+          scales. We explore the effects of full dynamics on earthquake
+          sequences, comparing outcomes to their quasi-dynamic counterparts. The
+          fully-dynamic ruptures are accompanied with higher stress
+          concentrations, faster slip rates and rupture speeds, and produce
+          seismic scattering in the bulk as waves propagate through and reflect
+          off the basin edges. Because single-event dynamic simulations
+          penetrate further into sediments compared to quasi-dynamic
+          simulations, we hypothesize that the incorporation of inertial effects
+          would produce sequences of only surface-rupturing events, as opposed
+          to the subbasin events that emerge in purely quasi-dynamic scenarios.
+          However, we find that with full dynamics present, the alternating
+          sequence of subbasin and surface breaking ruptures is a persistent
+          outcome. Thus an earthquake's potential to penetrate into shallow
+          sediments should be viewed through the lens of the earthquake
+          sequence, as it depends strongly on self-consistent initial conditions
+          obtained from seismogenic cycling.
+        </font>
+      </details>
+
+      <b>Matrix-free methods for summation-by-parts finite difference operators
+        on GPUs,</b>,
+        A. Chen, B. A. Erickson, J. E. Kozdon, J.-W.and Choi. 2022.
+
+      <h3 id="peer-reviewed">peer-reviewed</h3>
+
       <b>Entropy Stable Discontinuous Galerkin Methods for Balance Laws in
         Non-Conservative Form: Applications to Euler</b>.
       M. Waruszewski, J. E. Kozdon, L. C. Wilcox, T. H. Gibson, and F. X.
       Giraldo.
-      2021.
+      <em>Journal of Computational Physics</em>, 468,
+      2022.
       arXiv:&nbsp;<a href="https://arxiv.org/abs/2110.15920">2110.15920</a>
+      DOI:&nbsp;<a href="http://dx.doi.org/10.1016/j.jcp.2022.111507">10.1016/j.jcp.2022.111507</a>
       <details>
         <summary>abstract</summary>
         <font size="-1">
@@ -80,58 +176,59 @@
       A. Sridhar, Y. Tissaoui, S. Marras, Z. Shen, C. Kawczynski, S. Byrne, K.
       Pamnany, M. Waruszewski, T. H.  Gibson, J. E. Kozdon, V. Churavy, L. C.
       Wilcox, F. X.  Giraldo, and T. Schneider.
-      2021.
+      <em>Geoscientific Model Development</em>, 15, 6259–6284, 2022.
       arXiv:&nbsp;<a href="https://arxiv.org/abs/2110.00853">2110.00853</a>
+      DOI:&nbsp;<a href="http://dx.doi.org/10.5194/gmd-15-6259-2022">10.5194/gmd-15-6259-2022</a>
       <details>
         <summary>abstract</summary>
         <font size="-1">
           We introduce ClimateMachine, a new open-source atmosphere modeling
-          framework using the Julia language to be performance portable on
-          central processing units (CPUs) and graphics processing units (GPUs).
-          ClimateMachine uses a common framework both for coarser-resolution
-          global simulations and for high-resolution, limited-area large-eddy
-          simulations (LES). Here, we demonstrate the LES configuration of the
-          atmosphere model in canonical benchmark cases and atmospheric flows,
-          using an energy-conserving nodal discontinuous-Galerkin (DG)
-          discretization of the governing equations. Resolution dependence,
-          conservation characteristics and scaling metrics are examined in
-          comparison with existing LES codes. They demonstrate the utility of
-          ClimateMachine as a modelling tool for limited-area LES flow
-          configurations.
+          framework which uses the Julia language and is designed to be scalable
+          on central processing units (CPUs) and graphics processing units
+          (GPUs). ClimateMachine uses a common framework both for
+          coarser-resolution global simulations and for high-resolution,
+          limited-area large-eddy simulations (LESs). Here, we demonstrate the
+          LES configuration of the atmosphere model in canonical benchmark cases
+          and atmospheric flows using a total energy-conserving nodal
+          discontinuous Galerkin (DG) discretization of the governing equations.
+          Resolution dependence, conservation characteristics, and scaling
+          metrics are examined in comparison with existing LES codes. They
+          demonstrate the utility of ClimateMachine as a modeling tool for
+          limited-area LES flow configurations.
         </font>
       </details>
 
 
-      <b>A Non-stiff Summation-By-Parts Finite Difference Method for the
-        Wave Equation in Second Order Form: Characteristic Boundary
-        Conditions and Nonlinear Interfaces</b>.
-      J. E. Kozdon, B. A. Erickson, and T. Harvey.
-      2021.
+      <b>A Non-Stiff Summation-By-Parts Finite Difference Method for the Scalar
+      Wave Equation in Second Order Form: Characteristic Boundary Conditions and
+      Nonlinear Interfaces</b>.
+      B. A. Erickson, J. E. Kozdon, and T. Harvey.
+      <em>Journal of Scientific Computing</em>,
+      93, Article number: 17, 2022.
       arXiv:&nbsp;<a href="https://arxiv.org/abs/2106.00706">2106.00706</a>
+      DOI:&nbsp;<a href="http://dx.doi.org/10.1007/s10915-022-01961-1">10.1007/s10915-022-01961-1</a>
       <details>
         <summary>abstract</summary>
         <font size="-1">
-          Curvilinear, multiblock summation-by-parts finite difference methods
+          Curvilinear, multiblock summation-by-parts finite difference operators
           with the simultaneous approximation term method provide a stable and
-          accurate method for solving the wave equation in second order form.
+          accurate framework for solving the wave equation in second order form.
           That said, the standard method can become arbitrarily stiff when
           characteristic boundary conditions and nonlinear interface conditions
           are used. Here we propose a new technique that avoids this stiffness
-          by using characteristic variables to "upwind" the boundary and
+          by using characteristic variables to “upwind” the boundary and
           interface treatment. This is done through the introduction of an
           additional block boundary displacement variable. Using a unified
           energy, which expresses both the standard as well as characteristic
           boundary and interface treatment, we show that the resulting scheme
-          has semidiscrete energy stability for the anistropic wave equation.
-          The theoretical stability results are confirmed with numerical
-          experiments that also demonstrate the accuracy and robustness of the
-          proposed scheme. The numerical results also show that the
-          characteristic scheme has a time step restriction based on standard
-          wave propagation considerations and not the boundary closure.
+          has semidiscrete energy stability for the scalar anisotropic wave
+          equation. The theoretical stability results are confirmed with
+          numerical experiments that also demonstrate the accuracy and
+          robustness of the proposed scheme. The numerical results also show
+          that the characteristic scheme has a time step restriction based on
+          standard wave propagation considerations and not the boundary closure.
         </font>
       </details>
-
-      <h3 id="peer-reviewed">peer-reviewed</h3>
 
       <b>Hybridized summation-by-parts finite difference methods</b>.
       J. E. Kozdon, B. A. Erickson, and L. C. Wilcox.
@@ -819,7 +916,7 @@
       </details>
 
       <b>Bayes-Turchin approach to XAS Analysis</b>.
-      J. J. Rehr, J. Kozdon, J. Kas, H.J. Krappe, , and M.H. Rossner.
+      J. J. Rehr, J. Kozdon, J. Kas, H.J. Krappe, and M.H. Rossner.
       <em>Journal of Synchrotron Radiation</em>, 12:70-74, 2005.
       <a href="http://dx.doi.org/10.1107/S0909049504027876">10.1107/S0909049504027876</a>
       <details>
